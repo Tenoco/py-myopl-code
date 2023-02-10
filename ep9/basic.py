@@ -657,7 +657,7 @@ class Parser:
 				return res.success(expr)
 			else:
 				return res.failure(InvalidSyntaxError(
-					self.current_tok.pos_start, self.current_tok.pos_end,
+				self.current_tok.pos_start, self.current_tok.pos_end,
 					"Expected ')'"
 				))
 		
